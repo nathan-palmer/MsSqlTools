@@ -1,0 +1,17 @@
+Package: MsSqlTools
+Title: Convenience wrapper functions to establish ODBC connections to SQL Server
+Version: 0.0.0.9000
+Authors@R: 
+    person(given = "Nathan",
+           family = "Palmer",
+           role = c("aut", "cre"),
+           email = "nathan_palmer@hms.harvard.edu",
+           comment = "")
+Description: This package provides convenience wrapper functions that establish ODBC connections to Microsoft SQL Server using either Microsoft's "ODBC Driver 17 for SQL Server", or the "FreeTDS" driver.  These drivers must be installed along with unixodbc in a Linux / Unix system in order for this package to work, and must be installed under those exact names e.g. in odbcinst.ini.
+License: What license it uses
+Encoding: UTF-8
+LazyData: true
+RoxygenNote: 6.1.1
+Imports: 
+    DBI (>= 1.1.0),
+    odbc (>= 1.2.3)
